@@ -63,63 +63,7 @@ This project demonstrates real-time visual object tracking using adaptive correl
 
 7. **Build the Project**
 
-   Set configuration to Release x64
-   Click Build > Build Solution (Ctrl+Shift+B)
+         Set configuration to Release x64
+         Click Build > Build Solution (Ctrl+Shift+B)
+         Run Local Debugger or Open .exe file from Release Folder
 
-▶️ How to Run
-Launch Application
-
-Run the built executable from Release folder or inside Visual Studio.
-
-Select Input Source:
-  Use "File > Open Video File" to load a video.
-  Or select "Input > Webcam" for live webcam feed.
-
-Select ROI:
-  Use the mouse to draw a rectangle over the object to track.
-
-Tracking Options:
-  Pause / Resume tracking from menu or toolbar.
-
-Reset ROI using the R key or menu.
-
-Enable Save to save tracking output to an .avi file.
-
-Confidence scores and timestamps are automatically logged.
-
-📂 Output Files
-Tracked video (if saving is enabled):
-tracked_output.avi
-
-Confidence Log File:
-tracking_log.csv
-Format: Timestamp(ms), Confidence
-
-⌨️ Keyboard Shortcuts
-Key	Action
-Space	Pause / Resume
-R	Reset ROI selection
-
-📈 System Architecture
-
-+--------------+       +----------------------+       +--------------------+
-|  Input Feed  | --->  |  Preprocessing (Gray + DFT)  | --->  MOSSE Filter |
-+--------------+       +----------------------+       +--------------------+
-       |                             |                          |
-       v                             v                          v
-  ROI Selection              Gaussian Target             Confidence Score
-                                                        + Update + Logging
-
-
-📜 License
-MIT License. See LICENSE file for more info.
-
-🙌 Acknowledgements
-David Bolme et al., 2010 – Original MOSSE Algorithm Paper
-OpenCV.org – Open-source computer vision library
-Microsoft Docs – MFC Overview
-
-🤝 Contributors
-Anurag Jena
-Balasore College of Engineering & Technology
-B.Tech (CSE), Final Year
