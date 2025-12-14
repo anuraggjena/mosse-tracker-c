@@ -36,7 +36,7 @@ This project demonstrates real-time visual object tracking using adaptive correl
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/MOSSETrackerApp.git
+   git clone https://github.com/anuraggjena/mosse-tracker-c.git
    cd MOSSETrackerApp
 
 2. **Open in Visual Studio**
